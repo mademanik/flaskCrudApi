@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "4df6deeb-6247-4d2b-9bde-7f61da4260c5",
+		"name": "Flask-CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17177589"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "manik.yasa@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "mademanik",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "04-06-1997",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "indonesia",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "083834595233",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/accounts/d9130b0b-684f-435e-92f9-5c2041ca3340",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"accounts",
+						"d9130b0b-684f-435e-92f9-5c2041ca3340"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "manik.yasa@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "blimanik",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "04-06-1997",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "indonesia",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "083834595233",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/accounts/d9130b0b-684f-435e-92f9-5c2041ca3340",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"accounts",
+						"d9130b0b-684f-435e-92f9-5c2041ca3340"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "manik.yasa@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "blimanik",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "04-06-1997",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "indonesia",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "083834595233",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/accounts/d9130b0b-684f-435e-92f9-5c2041ca3340",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"accounts",
+						"d9130b0b-684f-435e-92f9-5c2041ca3340"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
